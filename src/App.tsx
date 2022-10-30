@@ -1,9 +1,13 @@
-import './App.css'
+import Router from "./Routes/Router";
+import { useContext } from "react";
+import { BrowserRouter } from "react-router-dom";
 
-export default function App() {
+function App() {
   return (
-    <main>
-      React ⚛️ + Vite ⚡ + Replit 🌀
-    </main>
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
   )
 }
+
+export default App;

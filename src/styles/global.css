@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    font-family: 'Nunito', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    @apply bg-fd-background;
+}
+
+.filledButton{
+    @apply flex items-center cursor-pointer justify-center border-none text-base font-semibold border-2 rounded-[12px] text-[#fff] p-4 hover:brightness-125 transition duration-200 disabled:brightness-125 disabled:cursor-not-allowed;
+}
+.tabPrimary {
+    @apply flex bg-fd-ghost px-[20px] text-xs h-[30px] font-semibold text-fd-primary rounded-fd-radius-lg transition-all duration-200 hover:brightness-125 truncate;
+}
+.tabButton {
+    @apply flex space-x-1 hover:bg-fd-ghost px-[9px] text-xs h-[30px] font-semibold text-fd-description  hover:text-fd-primary rounded-fd-radius-lg transition-all duration-200 hover:brightness-125;
+}
