@@ -5,7 +5,7 @@ import { AuthRoutes } from "./AuthRoutes";
 import { useNavigate } from "react-router-dom";
 
 export default function Router() {
-    const [authenticated, setAuthenticated] = useState(true);
+    const [authenticated, setAuthenticated] = useState(false);
 
     const navigate = useNavigate();
 
