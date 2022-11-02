@@ -4,6 +4,9 @@ import { Input } from "../components/Input";
 import FindevLogo from '../assets/FinDev.svg';
 import { useEffect, useState } from "react";
 
+import toast from 'react-hot-toast';
+import { sucess } from "../styles/toastStyles";
+
 type Login = {
     email: string;
     password: string;
@@ -20,6 +23,8 @@ export default function Login() {
             email, 
             password
         });
+
+        toast.success(`Seja bem vindo(a), ${email}! 😀`);
     }
 
     useEffect(() => console.log(user), [user]);

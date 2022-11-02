@@ -19,7 +19,7 @@ module.exports = {
       'fd-danger': "#FC5C65",
       'fd-success': "#2ECC71",
       'fd-ghost': "rgba(69, 170, 242, 0.15)",
-      'fd-ghost-bg': "rgba(69, 170, 242, 0.05)",
+      'fd-ghost-bg': "rgba(69, 170, 242, 0.10)",
       'fd-ghost-danger': "rgba(252, 92, 101, 0.15)",
       'fd-ghost-dark': "rgba(0, 0, 0, 0.15)",
       'fd-transparent': "transparent",
@@ -27,6 +27,7 @@ module.exports = {
     dropShadow: {
       'fd-shadow': '0px 2px 5px rgba(0, 0, 0, 0.1)',
       'perfect-shadow': "0px 199px 80px rgba(0, 0, 0, 0.01), 0px 112px 67px rgba(0, 0, 0, 0.05), 0px 50px 50px rgba(0, 0, 0, 0.09);",
+      'blue-shadow': '0px 20px 96px rgba(69, 170, 242, 0.1)',
     },
     borderRadius: {
       'fd-radius-sm': '3px',
