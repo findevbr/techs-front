@@ -115,7 +115,7 @@ export default function AddTech() {
 
             <div className="flex flex-1 flex-col space-y-[12px] h-full items-center pt-[50px]">
                 <div 
-                    className="flex flex-col select-none bg-fd-card cursor-pointer rounded-fd-radius-xg drop-shadow-blue-shadow h-[450px] border-dashed border-[3px] transition-all duration-200 hover:bg-fd-ghost-bg items-center justify-center border-fd-primary text-fd-primary space-y-[12px] w-[450px]"
+                    className="flex flex-col select-none bg-fd-card cursor-pointer rounded-fd-radius-xg drop-shadow-blue-shadow h-[450px] border-dashed border-[3px] transition-all duration-200 items-center justify-center border-fd-description hover:border-fd-primary text-fd-description hover:text-fd-primary space-y-[12px] w-[450px]"
                 >
                     <Image size={80}/>
 

@@ -50,7 +50,7 @@ export function Input(props: props) {
                         ${props.error && 'border-fd-danger'}
 
                         focus:border-fd-primary
-                        focus:bg-fd-ghost-bg
+                        focus:bg-[#f9f9f9]
                     `}
                     type={props.type ? props.type : 'text'} 
                     placeholder={props.placeholder ? props.placeholder : ''} 

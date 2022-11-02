@@ -940,7 +940,7 @@ postcss@^8.4.17, postcss@^8.4.18:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
-prop-types@^15.7.2:
+prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -966,6 +966,13 @@ react-dom@^18.2.0:
   dependencies:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
+
+react-favicon@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/react-favicon/-/react-favicon-1.0.1.tgz#0524bede1cfbdf4e57b262aa52ae9513b27445b1"
+  integrity sha512-tbMjIfIE5cLj4BpnkJznQ1U7Dmvdp3iN02AyzXTSzfhxAGFjuf7tMBmapMRSdK7v1zX6+CktuOG1CT1jlrjPXw==
+  dependencies:
+    prop-types "^15.8.1"
 
 react-feather@^2.0.10:
   version "2.0.10"
