@@ -19,3 +19,17 @@ body{
 .tabButton {
     @apply flex space-x-1 hover:bg-fd-ghost px-[9px] text-xs h-[30px] font-semibold text-fd-description  hover:text-fd-primary rounded-fd-radius-lg transition-all duration-200 hover:brightness-125;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.containerWithHeader {
+    height: calc(100vh - 90px);
+}

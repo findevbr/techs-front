@@ -11,17 +11,19 @@ export default function Header() {
                 className="tabButton space-x-[40px] items-center"
             >
                 <Plus size={12}/>
-                Adicionar tecnologia
+                <h1>Adicionar tecnologia</h1>
             </Link>
 
-            <img
-                className="w-[55px]" 
-                src={FindevLogo} 
-                alt="Logo" 
-            />
+            <Link className="hover:opacity-40 duration-200 transition-all" to="/">
+                <img
+                    className="w-[55px]" 
+                    src={FindevLogo} 
+                    alt="Logo" 
+                />
+            </Link>
 
-            <div className="flex items-center justify-center space-y-4">
-                <p>Pablo Lopes</p>
+            <div className="flex select-none hover:bg-[#E9E9E9] duration-200 transition-all rounded-fd-radius-md p-2 cursor-pointer items-center justify-center space-x-2">
+                <p className="text-[#333]">Pablo Lopes</p>
                 <div className="rounded-[50%] bg-fd-light w-[25px] h-[25px]"/>
             </div>
         </div>

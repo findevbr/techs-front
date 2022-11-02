@@ -20,7 +20,7 @@ export function Input(props: props) {
         <div className={`flex flex-col group justify-center ${props.className} ${props.shaddow ? 'drop-shadow-fd-shadow' : 'drop-shadow-none'}`}>
             { props.label && <p className="text-xs mb-1 text-[#999] font-normal">{props.label}</p> }
             <div className="flex items-center">
-                <div className={`absolute translate-x-3 ${props.error ? 'text-fd-danger' : 'text-fd-description'}`}>
+                <div className={`absolute translate-x-4 ${props.error ? 'text-fd-danger' : 'text-fd-description'}`}>
                     {props.icon ? props.icon : <></>}
                 </div>
                 <input 
