@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Header from "../components/Header";
 import { AppRoutes } from "./AppRoutes";
 import { AuthRoutes } from "./AuthRoutes";
@@ -7,9 +7,10 @@ import Favicon from "react-favicon";
 
 import FindevFavDark from '../assets/favdark.png';
 import FindevFavLight from '../assets/fav.png';
+import { AuthContext } from "../contexts/AuthContext";
 
 export default function Router() {
-    const [authenticated, setAuthenticated] = useState(true);
+    const { authenticated } = useContext(AuthContext);
 
     const navigate = useNavigate();
 
@@ -19,7 +20,7 @@ export default function Router() {
         <div>
             { authenticated ? <Header /> : <></>} 
             { 
-                !authenticated 
+                authenticated 
                     ? <Favicon url={FindevFavDark} /> 
                     : <Favicon url={FindevFavLight} /> 
             } 
