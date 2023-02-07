@@ -83,7 +83,7 @@ export default function AddTech() {
                     </div>
                 </div>
 
-                <div className="flex w-full space-x-[12px]">
+                <div className="flex w-full mt-[12px] space-x-[12px]">
                     <button
                         disabled={
                             techName === '' ||

@@ -2,10 +2,11 @@ import { User, Lock } from "react-feather";
 
 import { Input } from "../components/Input";
 import FindevLogo from '../assets/FinDev.svg';
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 
 import toast from 'react-hot-toast';
 import { sucess } from "../styles/toastStyles";
+import { AuthContext } from "../contexts/AuthContext";
 
 type Login = {
     email: string;
@@ -18,11 +19,15 @@ export default function Login() {
 
     const [user, setUser] = useState<Login>();
 
+    const { login } = useContext(AuthContext);
+
     function handleLogin() {
         setUser({
             email, 
             password
         });
+
+        login();
 
         toast.success(`Seja bem vindo(a), ${email}! 😀`);
     }
